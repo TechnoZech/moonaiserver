@@ -6,8 +6,8 @@ passport.use(
 		{
 			clientID: process.env.CLIENT_ID,
 			clientSecret: process.env.CLIENT_SECRET,
+			callbackURL: process.env.CLIENT_CALLBACK_URL,
 			// callbackURL: "/auth/google/callback",
-			callbackURL: "https://coruscating-souffle-37711e.netlify.app/",
 			scope: ["profile", "email"],
 		},
 		function (accessToken, refreshToken, profile, callback) {
