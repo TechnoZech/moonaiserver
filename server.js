@@ -55,6 +55,6 @@ app.use(
 
 app.use("/auth", authRoute);
 
-// const port = process.env.PORT || 3080;
-const port = process.env.PORT || 10000;
+const port = process.env.PORT || 3080;
+// const port = process.env.PORT || 10000;
 app.listen(port, () => console.log(`Listenting on port ${port}...`));
