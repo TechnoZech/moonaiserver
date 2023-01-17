@@ -39,6 +39,7 @@ app.use(
 		name: "session",
 		keys: ["cyberwolve"],
 		maxAge: 24 * 60 * 60 * 100,
+    sameSite: "none",
 	}) 
 );
 
@@ -46,6 +47,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.enable("trust proxy");
+
 app.use(
 	cors({
 		origin: `${process.env.CLIENT_PORT}`,
